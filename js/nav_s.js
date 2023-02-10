@@ -20,47 +20,47 @@ botonesNavegador.forEach(boton => {
 
         if (e.currentTarget == botonesNavegador[0]){
             console.log("Home");
-            inicioIcon.src = "IMG/boton-de-inicio (1).png";
-            instructores.src = "IMG/instructores.png"
-            tituladasIcon.src = "IMG/tituladas.png";
-            mapaIcon.src = "IMG/mapa.png";
-            calendarioIcon.src = "IMG/calendario.png"
+            inicioIcon.src = "images/boton-de-inicio (1).png";
+            instructores.src = "images/instructores.png"
+            tituladasIcon.src = "images/tituladas.png";
+            mapaIcon.src = "images/mapa.png";
+            calendarioIcon.src = "images/calendario.png"
         }
 
         if (e.currentTarget == botonesNavegador[1]){
             console.log("perfil");
-            inicioIcon.src = "IMG/boton-de-inicio.png"
-            instructores.src = "IMG/instructores.png"
-            tituladasIcon.src = "IMG/tituladas2.png";
-            mapaIcon.src = "IMG/mapa.png";
-            calendarioIcon.src = "IMG/calendario.png"
+            inicioIcon.src = "images/boton-de-inicio.png"
+            instructores.src = "images/instructores.png"
+            tituladasIcon.src = "images/tituladas2.png";
+            mapaIcon.src = "images/mapa.png";
+            calendarioIcon.src = "images/calendario.png"
         }
         
         if (e.currentTarget == botonesNavegador[2]){
             console.log("chatbox");
-            inicioIcon.src = "IMG/boton-de-inicio.png"
-            instructores.src = "IMG/instructores2.png"
-            tituladasIcon.src = "IMG/tituladas.png";
-            mapaIcon.src = "IMG/mapa.png";
-            calendarioIcon.src = "IMG/calendario.png"
+            inicioIcon.src = "images/boton-de-inicio.png"
+            instructores.src = "images/instructores2.png"
+            tituladasIcon.src = "images/tituladas.png";
+            mapaIcon.src = "images/mapa.png";
+            calendarioIcon.src = "images/calendario.png"
         }
         
         if (e.currentTarget == botonesNavegador[3]){
             console.log("otro");
-            inicioIcon.src = "IMG/boton-de-inicio.png"
-            instructores.src = "IMG/instructores.png"
-            tituladasIcon.src = "IMG/tituladas.png";
-            mapaIcon.src = "IMG/mapa2.png";
-            calendarioIcon.src = "IMG/calendario.png"
+            inicioIcon.src = "images/boton-de-inicio.png"
+            instructores.src = "images/instructores.png"
+            tituladasIcon.src = "images/tituladas.png";
+            mapaIcon.src = "images/mapa2.png";
+            calendarioIcon.src = "images/calendario.png"
         }
         
         if (e.currentTarget == botonesNavegador[4]){
             console.log("otro");
-            inicioIcon.src = "IMG/boton-de-inicio.png"
-            instructores.src = "IMG/instructores.png"
-            tituladasIcon.src = "IMG/tituladas.png";
-            mapaIcon.src = "IMG/mapa.png";
-            calendarioIcon.src = "IMG/calendario2.png"
+            inicioIcon.src = "images/boton-de-inicio.png"
+            instructores.src = "images/instructores.png"
+            tituladasIcon.src = "images/tituladas.png";
+            mapaIcon.src = "images/mapa.png";
+            calendarioIcon.src = "images/calendario2.png"
         }
         
     });
@@ -101,13 +101,13 @@ $(document).ready(function(){
 
     perfilMenu.click(function() {
         if (PerfilOpciones.css("display") == "none") {
-          PerfilOpciones.css("display", "flex");
-          $("#perfil").css("border-bottom-right-radius", "0px")
-          $("#perfil").css("border-bottom-left-radius", "0px")
-        } else if (PerfilOpciones.css("display") == "flex") {
-          PerfilOpciones.css("display", "none");
-          $("#perfil").css("border-bottom-right-radius", "10px")
-          $("#perfil").css("border-bottom-left-radius", "10px")
+            PerfilOpciones.css("display", "flex");
+            $("#perfil").css("border-bottom-right-radius", "0px")
+            $("#perfil").css("border-bottom-left-radius", "0px")
+            } else if (PerfilOpciones.css("display") == "flex") {
+            PerfilOpciones.css("display", "none");
+            $("#perfil").css("border-bottom-right-radius", "10px")
+            $("#perfil").css("border-bottom-left-radius", "10px")
         }
     });
 
