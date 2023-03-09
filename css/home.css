@@ -11,17 +11,13 @@ body{
 :root{
     --FondoPai: rgb(255, 255, 255);
 }
-.incluir{
-    text-align: center;
-    font-size: 3rem;
-    background: grey;
-    padding: 30px;
-    margin-bottom: 50px;
-}
+
 
 /*contenido inicio*/
 
 .cont_inicio{
+    margin-top: 5rem;
+    border: 1px solid red;
     display: flex;
     padding: 30px;
     justify-content: space-around;

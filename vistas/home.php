@@ -4,16 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../css/home.css">
     <title>Pai Inicio</title>
 </head>
 <body>
-    <header>
-        <div class="incluir">
-            <p>AQUI VA LA BARRA DE NAV INCLUIDA CON PHP</p>
-        </div>
-    </header>
-
 <section class="cont_inicio">
         <div class="titulos">
             <div class="titulo_inicio">

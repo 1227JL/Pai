@@ -20,27 +20,27 @@
             <p>Iniciar Sesion</p>
         </div>
 
-        <label for="usuario"><img src="images/person-icon.svg" alt=""><input type="text" placeholder="Usuario" name="usuario" id="usuario"></label>
-        <label for="contraseña"><img src="images/candado-icon.svg" alt=""><input type="password" placeholder="Contraseña" name="contraseña" id="contraseña"></label>
+        <label for="usuario"><img src="images/person-icon.svg" alt="">
+        <input type="text" placeholder="Usuario" name="usuario" id="login_usuario" pattern="[a-zA-Z0-9]{4,20}" maxlength="20" required></label>
+        <label for="contraseña"><img src="images/candado-icon.svg" alt="">
+        <input type="password" placeholder="Contraseña" name="login_contraseña" id="contraseña" pattern="[a-zA-Z0-9$@.-]{7,100}" maxlength="100" required></label>
 
         <!-- <a href="#" class="enlace-olvidar">Olvide mi contraseña</a> -->
 
         <button type="submit" class="btn-ingresar">Ingresar</button>
+
+        <?php
+			if(isset($_POST['login_usuario']) && isset($_POST['login_contraseña'])){
+				require_once "./php/main.php";
+				require_once "./php/iniciar_sesion.php";
+			}
+		?> 
     </form>
     
-        <div class="caja-muñequita">
-            <img class="img-muñequita" src="images/muñeca.svg" alt="">
-        </div>
-        <div class="burbuja invisible"></div>
-        
-        
     
 </div>
 </section>
 
-
-
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-    <script src="js/login.js"></script>
 </body>
 </html>
