@@ -7,6 +7,8 @@
 body{
     font-family: 'Poppins', sans-serif;
     background: var(--FondoPai);
+    display: flex;
+    flex-direction: column;
 }
 :root{
     --FondoPai: rgb(255, 255, 255);
@@ -16,8 +18,7 @@ body{
 /*contenido inicio*/
 
 .cont_inicio{
-    margin-top: 5rem;
-    border: 1px solid red;
+    margin-top: 10rem;
     display: flex;
     padding: 30px;
     justify-content: space-around;
