@@ -67,6 +67,7 @@
     <div id="contenido">
         
     </div>
+    <div class="" id="pag2"></div>
 
     
     <script src="js/jquery-3.6.3.min.js"></script>

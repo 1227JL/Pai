@@ -28,11 +28,22 @@ function enviar_formulario_ajax(e){
         .then(respuesta =>{
             let contenedor=document.querySelector(".form-rest");
             contenedor.innerHTML = respuesta;
+            
         });
 
+
+        let form = document.querySelector("form");
+        form.reset()
+        
     }
+
+    
 }
 
 formularios_ajax.forEach(formularios => {
     formularios.addEventListener("submit", enviar_formulario_ajax); //cuando un formulario se envie mediante submit se ejecutara la funcion que se llama enviar_formulario_ajax
 });
+
+
+
+

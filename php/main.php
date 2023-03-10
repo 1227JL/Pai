@@ -1,9 +1,12 @@
 <?php
 
-$conexion = mysqly_query('localhost','root','','ProyectoPai');
+	function conexion(){
+	$pdo = new PDO('mysql:host=localhost;dbname=proyectopai','root',''); 
+	return $pdo;
+	}
 
 
-function verificarDatos($filtro,$cadena){
+function verificar_datos($filtro,$cadena){
 
     if(preg_match("/^".$filtro."$/",$cadena)){
         return false;
