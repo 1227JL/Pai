@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/nav_s.css">
+    <link rel="stylesheet" href="../css/instructores.css">
+    <title>Instructores</title>
+</head>
+<body>
+    
+    <div class="caja-navegador">
+        <div class="navegador">
+            <div class="logo-name">
+                <a href="#"><h3>Pa<span>i</span></h3></a>
+                <div id="separacion">j</div>
+                <img src="../images/logoSena.png" alt="" width="50px" height="50px">
+            </div>
+            <ul class="ul1">
+                <li class="lista" id="inicio">
+                    <a href="../inc/nav_s.html">
+                        <span class="icon"><img src="../images/boton-de-inicio.png" alt="" height="30px"></span>
+                        <span class="text">Inicio</span>
+                    </a>
+                </li>
+                <li class="lista" id="tituladas">
+                    <a href="../vistas/tituladas.html">
+                        <span class="icon"><img src="../images/tituladas.png" alt="" height="40px"></span>
+                        <span class="text">Tituladas</span>
+                    </a>
+                </li>
+                <li class="lista active" id="instructores">
+                    <a href="instructores.html">
+                        <span class="icon"><img src="../images/instructores2.png" alt="" height="38px"></span>
+                        <span class="text">Instructores</span>
+                    </a>
+                </li>
+                <li class="lista" id="mapa">
+                    <a href="mapa.html">
+                        <span class="icon"><img src="../images/mapa.png" alt="" height="35px"></span>
+                        <span class="text">Mapa</span>
+                    </a>
+                </li>
+                <li class="lista" id="calendario">
+                    <a href="calendario.html">
+                        <span class="icon"><img src="../images/calendario.png" alt="" height="30px"></span>
+                        <span class="text">Calendario</span>
+                    </a>
+                </li>
+                <div class="bordeCurbo"></div>
+            </ul>
+        </div>
+    
+        <div class="perfil" id="perfil">
+            <div id="perfilIcon">
+                <img src="../images/usuario.png" alt="" height="30
+                px">
+            </div>
+            <p id="Name-usuario">Nombre</p>
+            <img id="listOptionsIcon" src="../images/arrow-down-sign-to-navigate.png" alt="" height="18px">
+            <ul id="listOptions">
+                <li><a id="verPerfil" href="">Ver perfil</a></li>
+                <li><a href="">Cerrar sesión</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="contenido">
+        
+    </div>
+    
+    <div class="container is-fluid mb-6">
+        <h1 class="title">Usuarios</h1>
+        <h2 class="subtitle">Nuevo usuario</h2>
+    </div>
+    <div class="container pb-6 pt-6">
+        <div class="form-rest mb-6 mt-6"></div>
+        <form action="./php/usuario_guardar.php" method="POST" class="formularioAjax" autocomplete="off" >
+            <div class="columns">
+                <div class="column">
+                    <div class="control">
+                        <label>Nombres</label>
+                        <input class="input" type="text" name="usuario_nombre" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,40}" maxlength="40" required >
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="control">
+                        <label>Apellidos</label>
+                            <input class="input" type="text" name="usuario_apellido" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,40}" maxlength="40" required >
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="control">
+                        <label>Usuario</label>
+                        <input class="input" type="text" name="usuario_usuario" pattern="[a-zA-Z0-9]{4,20}" maxlength="20" required >
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="control">
+                        <label>Email</label>
+                        <input class="input" type="email" name="usuario_email" maxlength="70" >
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="control">
+                        <label>Clave</label>
+                        <input class="input" type="password" name="usuario_clave_1" pattern="[a-zA-Z0-9$@.-]{7,100}" maxlength="100" required >
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="control">
+                        <label>Repetir clave</label>
+                        <input class="input" type="password" name="usuario_clave_2" pattern="[a-zA-Z0-9$@.-]{7,100}" maxlength="100" required >
+                    </div>
+                </div>
+            </div>
+            <p class="has-text-centered">
+                <button type="submit" class="button is-info is-rounded">Guardar</button>
+            </p>
+        </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../js/nav_s.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

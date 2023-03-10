@@ -1,0 +1,4 @@
+
+.bordeCurbo {
+    transform: translateX(calc(70px * 3));
+}
