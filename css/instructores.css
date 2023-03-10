@@ -1,3 +1,4 @@
-.container{
-    margin-top: 10rem;
+
+.bordeCurbo {
+    transform: translateX(calc(70px * 2));
 }
